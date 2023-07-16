@@ -23,7 +23,7 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: varun8487/task
+          username: varun8487
           password: ${{ env.DOCKER_ACCESS_TOKEN }}
 
       # Build and push the Docker image
