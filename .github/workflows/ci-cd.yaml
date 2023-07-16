@@ -30,7 +30,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
         with:
-          context: backend-api  # Set the context for the Docker build to the backend-api directory
+          context: FirstApp  # Set the context for the Docker build to the backend-api directory
           push: true  # Push the Docker image to Docker Hub
           tags: |
 
@@ -57,7 +57,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
         with:
-          context: backend-api  # Set the context for the Docker build to the backend-api directory
+          context: SecondApp  # Set the context for the Docker build to the backend-api directory
           push: true  # Push the Docker image to Docker Hub
           tags: |
 
