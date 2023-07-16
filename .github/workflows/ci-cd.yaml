@@ -13,8 +13,8 @@ env:
 jobs:
   build_first_app:
     runs-on: ubuntu-latest
-    # if: contains(github.event.head_commit.message, 'FirstApp') || contains(github.event.head_commit.message, 'Modules')
-    if: ${{ contains(github.event.head_commit.modified, 'FirstApp/') || contains(github.event.head_commit.modified, 'Modules/') }}
+    if: contains(github.event.head_commit.message, 'FirstApp') || contains(github.event.head_commit.message, 'Modules')
+    # if: ${{ contains(github.event.head_commit.modified, 'FirstApp/') || contains(github.event.head_commit.modified, 'Modules/') }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
